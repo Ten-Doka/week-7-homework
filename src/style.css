@@ -26,7 +26,7 @@ form {
   width: 65%;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 15px 20px;
 }
 
 .search-button {
@@ -35,7 +35,7 @@ form {
   width: 25%;
   border: none;
   border-radius: 5px;
-  padding: 10px 10px;
+  padding: 15px 10px;
   margin-left: 5px;
 }
 
