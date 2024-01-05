@@ -11,11 +11,13 @@ body {
   padding: 30px 30px;
   border: none;
   border-radius: 15px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 form {
   display: block;
-  padding: 10px 15px;
+  text-align: center;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(162, 168, 211, 0.2);
 }
 
@@ -24,7 +26,7 @@ form {
   width: 65%;
   border: none;
   border-radius: 5px;
-  padding: 10px 10px;
+  padding: 10px 20px;
 }
 
 .search-button {
@@ -54,11 +56,36 @@ strong {
   color: #6643b5;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.descriptions {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px 0 0;
+}
+
+.icon {
+  padding-top: 25px;
+  font-size: 40px;
+}
+.temperature {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.unit {
+  padding-top: 15px;
+  font-size: 20px;
+}
+
 footer {
   font-size: 12px;
   color: #38598b;
   text-align: center;
-  padding: 10px 15px;
+  padding-top: 25px;
   border-top: 1px solid rgba(162, 168, 211, 0.2);
 }
 
