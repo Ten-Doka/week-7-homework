@@ -3,6 +3,8 @@ function currentWeather(response) {
   cityElement.innerHTML = response.data.city;
 
   let temperatureElement = document.querySelector("#temperature");
+  let unitElement = document.querySelector("#unit");
+  unitElement.innerHTML = "°C";
   let temperature = response.data.temperature.current;
   temperatureElement.innerHTML = Math.round(temperature);
 
@@ -10,10 +12,10 @@ function currentWeather(response) {
   weatherConditionElement.innerHTML = response.data.condition.description;
 
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+  humidityElement.innerHTML = `Humindity: ${response.data.temperature.humidity}%, `;
 
   let windSpeedElement = document.querySelector("#wind-speed");
-  windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
+  windSpeedElement.innerHTML = `Wind: ${response.data.wind.speed}km/h`;
 
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" alt="">`;
@@ -40,10 +42,10 @@ function formatDate(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
   if (minutes < 10) {
-    minutes = `0${minutes}`;
+    minutes = `0${minutes}, `;
   }
 
-  return `${hours}:${minutes}`;
+  return `${hours}:${minutes}, `;
 }
 
 function searchWeatherElement(event) {
