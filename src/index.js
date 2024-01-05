@@ -12,7 +12,7 @@ function currentWeather(response) {
   weatherConditionElement.innerHTML = response.data.condition.description;
 
   let humidityElement = document.querySelector("#humidity");
-  humidityElement.innerHTML = `Humindity: ${response.data.temperature.humidity}%, `;
+  humidityElement.innerHTML = `Humidity: ${response.data.temperature.humidity}%, `;
 
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `Wind: ${response.data.wind.speed}km/h`;
