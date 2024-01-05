@@ -1,6 +1,4 @@
 function currentWeather(response) {
-  console.log(response.data);
-
   let cityElement = document.querySelector("h1");
   cityElement.innerHTML = response.data.city;
 
