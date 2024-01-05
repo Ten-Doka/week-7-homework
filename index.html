@@ -4,20 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Namshee App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="weather-app">
       <header>
         <form>
-          <input type="text" placeholder="Enter a city..." required />
-          <input type="button" value="Search" />
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
-        <div class="city">Paris</div>
-        <div class="descriptions">Thursday 18:40, broken clouds</div>
-        <div class="weather-details">Humidity: 84%, Wind: 8.5km/h</div>
-        <div class="weather-temperature">⛅️10°C</div>
+        <div class="city-details">
+          <div class="city">
+            <h1>Paris</h1>
+            <span class="details"
+              >Thursday 18:40, broken clouds <br />Humidity:
+              <strong>84%</strong>, Wind: <strong>8.5km/h</strong></span
+            >
+          </div>
+          <div class="descriptions">⛅️10°C</div>
+        </div>
       </main>
       <footer>
         This project was coded by
